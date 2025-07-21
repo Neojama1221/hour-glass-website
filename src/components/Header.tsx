@@ -36,8 +36,12 @@ const Header = () => {
           {/* Enhanced Logo */}
           <div className="flex-shrink-0">
             <NavLink to="/" className="flex items-center space-x-2 group">
-              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Sparkles className="h-6 w-6 text-primary" />
+              <div className="w-10 h-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <img 
+                  src="/lovable-uploads/ae2ca714-51ca-4ad9-9545-9388b2a86f76.png" 
+                  alt="Hour-Glass Logo" 
+                  className="h-8 w-8 object-contain"
+                />
               </div>
               <span className={`text-2xl font-heading font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-primary' : 'text-white'
