@@ -308,7 +308,7 @@ const Contact = () => {
                     For urgent project matters requiring immediate attention:
                   </p>
                   <p className="font-heading font-bold text-accent text-2xl mb-2">
-                    +27 (0) 82 999 8888
+                    +27 (0) 81 591 6549
                   </p>
                   <p className="font-body text-xs text-muted-foreground">
                     Available 24/7 for critical project issues

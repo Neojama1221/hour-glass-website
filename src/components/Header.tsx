@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -74,7 +75,7 @@ const Header = () => {
 
           {/* Enhanced CTA Button */}
           <div className="hidden md:block">
-            <Button variant="accent" size="default" className="hover-lift pulse-glow">
+            <Button variant="accent" size="default" className="hover-lift pulse-glow" onClick={() => navigate("/contact")}>
               <Sparkles className="mr-2 h-4 w-4" />
               Get Consultation
             </Button>
@@ -113,7 +114,7 @@ const Header = () => {
                 </NavLink>
               ))}
               <div className="px-3 py-2">
-                <Button variant="accent" size="sm" className="w-full">
+                <Button variant="accent" size="sm" className="w-full" onClick={() => navigate("/contact")}>
                   Get Consultation
                 </Button>
               </div>

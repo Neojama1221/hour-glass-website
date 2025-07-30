@@ -3,11 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Eye, Shield, Target, AlertTriangle, ArrowRight, Sparkles, TrendingUp, Users } from "lucide-react";
 import { useScrollReveal, useParallax, useCountUp } from "@/hooks/useAdvancedEffects";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Home = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
   
   const projectsCount = useCountUp(150, 3000);
   const valueCount = useCountUp(2.5, 3000);
@@ -148,7 +150,7 @@ const Home = () => {
               to safeguard your most valuable assets.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button variant="accent" size="lg" className="text-xl px-12 py-4 hover-lift pulse-glow">
+              <Button variant="accent" size="lg" className="text-xl px-12 py-4 hover-lift pulse-glow" onClick={() => navigate("/contact")}>
                 <Sparkles className="mr-3 h-6 w-6" />
                 Partner With Excellence
                 <ArrowRight className="ml-3 h-6 w-6" />
