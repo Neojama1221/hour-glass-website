@@ -37,10 +37,10 @@ const About = () => {
   ];
 
   const credentials = [
-    { icon: Star, title: "PMP Certification", desc: "Project Management Professional" },
-    { icon: Star, title: "PRINCE2 Practitioner", desc: "Advanced project methodology" },
-    { icon: Star, title: "MSc Project Management", desc: "Advanced academic qualification" },
-    { icon: Star, title: "20+ Years Experience", desc: "African industrial projects" },
+    { icon: Star, title: "Professional Diploma in Forensic Schedule Analysis", desc: "College of Contract Management UK" },
+    { icon: Star, title: "Professional Diploma in Expert Witness (in progress)", desc: "College of Contract Management UK" },
+    { icon: Star, title: "Higher National Diploma: Mechanical Engineering", desc: "Durban University of Technology" },
+    { icon: Star, title: "16+ Years Experience", desc: "Engineering, procurement & construction" },
   ];
 
   return (
@@ -120,13 +120,45 @@ const About = () => {
               <div className="order-2 lg:order-1 reveal-up">
                 <div className="bg-white/10 backdrop-glass rounded-3xl p-10 shadow-premium">
                   <h3 className="text-4xl font-heading font-bold text-white mb-6">
-                    Director & Principal Consultant
+                    Raben Moodley
                   </h3>
+                  <div className="text-lg font-semibold text-accent mb-6">
+                    FORENSIC PLANNER, LEAD PLANNER, PLANNING ENGINEER
+                  </div>
                   <p className="text-xl font-body text-white/90 mb-8 leading-relaxed">
-                    With over two decades of transformative experience in project management across Africa's most challenging 
-                    industrial sectors, our director brings unparalleled expertise in delivering complex projects 
-                    from visionary conception to flawless completion.
+                    16+ years of expertise in engineering, procurement, construction, and project management for high-value, 
+                    complex capital projects portfolios.
                   </p>
+                  
+                  <div className="mb-8">
+                    <h4 className="text-2xl font-heading font-bold text-white mb-4">Key Experience & Achievements:</h4>
+                    <div className="space-y-4 text-white/90">
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Forensic Delay Analysis & Claims:</h5>
+                        <p className="text-sm">Investigated project delays, prepared expert reports for claims and legal proceedings, and applied advanced delay analysis methodologies for complex disputes.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Project Controls & Planning:</h5>
+                        <p className="text-sm">Developed and managed estimation and execution schedules for large EPC and mining projects, from concept to closeout.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Portfolio Management:</h5>
+                        <p className="text-sm">Oversaw portfolios of 100+ projects (total value R750M+), including the creation of portfolio master schedules and innovative tracking/reporting tools for strategic planning.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Major Infrastructure & Industrial Projects:</h5>
+                        <p className="text-sm">Delivered delay analysis, mitigation, and schedule management for projects ranging from R50 million to over R1 billion across rail, mining, industrial, and infrastructure sectors.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Progress Tracking & Reporting:</h5>
+                        <p className="text-sm">Engineered advanced tracking systems and reporting dashboards, enabling data-driven decision-making and comprehensive project oversight.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-accent mb-2">Contractual Compliance:</h5>
+                        <p className="text-sm">Ensured all schedules and project controls aligned with contract requirements, supporting claims, EOT submissions, and dispute resolution.</p>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {credentials.map((cred, index) => (
@@ -135,17 +167,17 @@ const About = () => {
                           <cred.icon className="h-4 w-4 text-accent" />
                         </div>
                         <div>
-                          <p className="font-heading font-semibold text-white">{cred.title}</p>
-                          <p className="text-sm text-white/70">{cred.desc}</p>
+                          <p className="font-heading font-semibold text-white text-sm">{cred.title}</p>
+                          <p className="text-xs text-white/70">{cred.desc}</p>
                         </div>
                       </div>
                     ))}
                   </div>
 
                   <div className="mt-8 p-6 bg-accent/10 rounded-2xl border border-accent/20">
-                    <p className="text-white/90 font-body">
-                      <span className="text-accent font-semibold">"Excellence in project management</span> isn't just about 
-                      meeting deadlines and budgets—it's about creating lasting value that transforms businesses and communities."
+                    <h5 className="font-semibold text-accent mb-2">Sector Experience:</h5>
+                    <p className="text-white/90 font-body text-sm">
+                      Mining | Oil & Gas | Construction | Infrastructure | Power Generation
                     </p>
                   </div>
                 </div>
