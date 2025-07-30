@@ -187,8 +187,8 @@ const About = () => {
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-gradient-accent rounded-full scale-110 opacity-20 animate-pulse"></div>
                   <img 
-                    src={directorProfile} 
-                    alt="Director Profile" 
+                    src="/lovable-uploads/ce247bf5-483e-44c3-9e35-b7f84107589a.png" 
+                    alt="Raben Moodley - Director Profile" 
                     className="w-96 h-96 rounded-full mx-auto shadow-premium object-cover border-4 border-accent/30 hover-lift"
                   />
                   <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-accent rounded-full flex items-center justify-center shadow-premium">
