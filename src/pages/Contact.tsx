@@ -23,28 +23,28 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+27 (0) 11 123 4567", "+27 (0) 82 456 7890"],
+      details: ["+27 (0) 815916549"],
       description: "Immediate response during business hours",
       gradient: "from-blue-500 to-cyan-400",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@hour-glass.co.za", "projects@hour-glass.co.za"],
+      details: ["admin@hour-glass.co.za", "raben@hour-glass.co.za"],
       description: "Professional response within 24 hours",
       gradient: "from-green-500 to-emerald-400",
     },
     {
       icon: MapPin,
       title: "Location",
-      details: ["Johannesburg", "South Africa"],
+      details: ["Kyalami, Gauteng", "Johannesburg"],
       description: "Serving clients across Africa",
       gradient: "from-purple-500 to-violet-400",
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Mon - Fri: 8:00 - 17:00", "Sat: 9:00 - 13:00"],
+      details: ["Mon - Fri: 8:00 - 17:00"],
       description: "Emergency support available 24/7",
       gradient: "from-amber-500 to-orange-400",
     }
