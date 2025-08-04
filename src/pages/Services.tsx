@@ -103,7 +103,7 @@ const Services = () => {
             Our <span className="text-accent">Services</span>
           </h1>
           <p className="text-xl md:text-2xl font-body max-w-3xl mx-auto opacity-90">
-            Comprehensive project management solutions across the complete project lifecycle
+            Comprehensive project planning solutions across the complete project lifecycle
           </p>
         </div>
       </section>
@@ -145,7 +145,7 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-heading font-bold text-primary mb-6">
-              Project Management Phases
+              Project Planning Phases
             </h2>
             <p className="text-xl font-body text-foreground max-w-3xl mx-auto">
               Our systematic approach ensures every aspect of your project is expertly managed
@@ -236,7 +236,7 @@ const Services = () => {
                   Training & Development
                 </h3>
                 <p className="font-body text-muted-foreground">
-                  Building internal project management capabilities
+                  Building internal project planning capabilities
                 </p>
               </CardContent>
             </Card>
@@ -251,7 +251,7 @@ const Services = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl font-body mb-8 max-w-2xl mx-auto opacity-90">
-            Let's discuss how our project management expertise can benefit your next project.
+            Let's discuss how our project planning expertise can benefit your next project.
           </p>
           <Button variant="accent" size="lg" className="text-lg">
             Schedule Consultation

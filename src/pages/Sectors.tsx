@@ -17,7 +17,7 @@ const Sectors = () => {
     {
       icon: Pickaxe,
       title: "Mining",
-      description: "Comprehensive project management for mining operations, from exploration to production",
+      description: "Comprehensive project planning for mining operations, from exploration to production",
       projects: "45+ Projects",
       value: "R1.2B+",
       expertise: [
@@ -45,7 +45,7 @@ const Sectors = () => {
     {
       icon: Building,
       title: "Construction",
-      description: "Large-scale construction project management from conception to completion",
+      description: "Large-scale construction project planning from conception to completion",
       projects: "38+ Projects",
       value: "R680M+",
       expertise: [

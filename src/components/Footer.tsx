@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-heading font-bold mb-4">Hour-Glass</h3>
             <p className="font-body text-sm opacity-90">
-              Professional project management consulting delivering clarity, integrity, 
+              Professional project planning consulting delivering clarity, integrity, 
               precision, and prevention to protect your time, cost, and reputation.
             </p>
           </div>

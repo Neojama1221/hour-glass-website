@@ -51,7 +51,7 @@ const Contact = () => {
   ];
 
   const services = [
-    "Project Management Consultation",
+    "Project Planning Consultation",
     "Risk Assessment & Mitigation",
     "Process Optimization",
     "Training & Development",

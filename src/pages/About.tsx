@@ -76,7 +76,7 @@ const About = () => {
               About <span className="text-gradient bg-gradient-to-r from-accent to-yellow-300 bg-clip-text text-transparent">Hour-Glass</span>
             </h1>
             <p className="text-2xl md:text-3xl font-body max-w-4xl mx-auto opacity-90 leading-relaxed">
-              Building excellence through visionary project management mastery
+              Building excellence through visionary project planning mastery
             </p>
           </div>
         </div>
@@ -92,12 +92,13 @@ const About = () => {
             </h2>
             <div className="bg-gradient-card rounded-3xl p-12 shadow-premium border-gradient hover-lift">
               <p className="text-2xl font-body text-foreground leading-relaxed mb-8">
-                At Hour-Glass, we believe that exceptional project management is the <span className="text-accent font-semibold">cornerstone of business transformation</span>. 
+                At Hour-Glass, we believe that exceptional project planning is the <span className="text-accent font-semibold">cornerstone of business transformation</span>. 
                 Our philosophy centers on four fundamental principles that guide every engagement: delivering absolute 
                 clarity in communication and objectives, maintaining unwavering integrity in all our dealings, 
                 applying surgical precision in every aspect of project execution, and implementing robust prevention 
                 strategies to mitigate risks before they impact your business.
               </p>
+              
               <p className="text-xl font-body text-muted-foreground leading-relaxed">
                 We understand that your reputation, time, and resources are invaluable. That's why we approach 
                 every project with the meticulous care and strategic thinking that complex, high-value projects demand. 
@@ -126,16 +127,16 @@ const About = () => {
                     FORENSIC PLANNER, LEAD PLANNER, PLANNING ENGINEER
                   </div>
                   <p className="text-xl font-body text-white/90 mb-8 leading-relaxed">
-                    16+ years of expertise in engineering, procurement, construction, and project management for high-value, 
+                    16+ years of expertise in engineering, procurement, construction, and project planning for high-value, 
                     complex capital projects portfolios.
                   </p>
                   
                   <div className="mb-8">
-                    <h4 className="text-2xl font-heading font-bold text-white mb-4">Key Experience & Achievements:</h4>
-                    <div className="space-y-4 text-white/90">
+                    <h4 className="text-2xl font-heading font-bold text-white mb-6">Key Experience & Achievements:</h4>
+                    <div className="space-y-6 text-white/90">
                       <div>
-                        <h5 className="font-semibold text-accent mb-2">Forensic Delay Analysis & Claims:</h5>
-                        <p className="text-sm">Investigated project delays, prepared expert reports for claims and legal proceedings, and applied advanced delay analysis methodologies for complex disputes.</p>
+                        <h5 className="font-semibold text-accent mb-3">Forensic Delay Analysis & Claims:</h5>
+                        <p className="text-sm leading-relaxed">Investigated project delays, prepared expert reports for claims and legal proceedings, and applied advanced delay analysis methodologies for complex disputes.</p>
                       </div>
                       <div>
                         <h5 className="font-semibold text-accent mb-2">Project Controls & Planning:</h5>
@@ -185,11 +186,10 @@ const About = () => {
               
               <div className="order-1 lg:order-2 text-center reveal-scale">
                 <div className="relative inline-block">
-                  <div className="absolute inset-0 bg-gradient-accent rounded-full scale-110 opacity-20 animate-pulse"></div>
                   <img 
                     src="/lovable-uploads/ce247bf5-483e-44c3-9e35-b7f84107589a.png" 
                     alt="Raben Moodley - Director Profile" 
-                    className="w-96 h-96 rounded-full mx-auto shadow-premium object-cover border-4 border-accent/30 hover-lift"
+                    className="w-96 h-96 rounded-full mx-auto shadow-premium object-cover hover-lift"
                   />
                   <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-accent rounded-full flex items-center justify-center shadow-premium">
                     <Sparkles className="h-10 w-10 text-primary" />

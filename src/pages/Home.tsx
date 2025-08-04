@@ -75,7 +75,7 @@ const Home = () => {
     { name: "Planning & Design", description: "Architectural blueprints and resource orchestration", icon: "📋" },
     { name: "Execution", description: "Masterful implementation with real-time optimization", icon: "⚡" },
     { name: "Monitoring", description: "Intelligent tracking with predictive adjustments", icon: "📊" },
-    { name: "Project Closeout", description: "Seamless delivery and knowledge preservation", icon: "🏆" },
+    { name: "Project Closeout", description: "Successful delivery and knowledge preservation", icon: "🏆" },
   ];
 
   const stats = [
@@ -145,7 +145,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl md:text-3xl font-body mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
-              Elite project management consulting delivering uncompromising 
+              Elite project planning consulting delivering uncompromising 
               <span className="text-accent font-semibold"> clarity, integrity, precision, and prevention</span> 
               to safeguard your most valuable assets.
             </p>
@@ -180,7 +180,7 @@ const Home = () => {
               <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"> Delivers</span>
             </h2>
             <p className="text-2xl font-body text-foreground max-w-6xl mx-auto leading-relaxed mb-16">
-              We orchestrate comprehensive project management symphonies, specializing in complex, 
+              We orchestrate comprehensive project planning symphonies, specializing in complex, 
               high-stakes projects across mining, oil & gas, construction, infrastructure, and power generation. 
               Our mastery ensures your projects transcend expectations in 
               <span className="text-accent font-semibold"> time, budget, and quality</span>.
@@ -255,11 +255,11 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 reveal-up">
             <h2 className="text-5xl md:text-6xl font-heading font-bold text-white mb-8">
-              Adaptive Project 
-              <span className="text-accent">Excellence</span>
+              Complete Project 
+              <span className="text-accent">Solutions</span>
             </h2>
             <p className="text-xl font-body text-white/90 max-w-4xl mx-auto">
-              Our comprehensive mastery covers every phase of your project lifecycle with surgical precision
+              Our proven approach covers every phase of your project with expert precision
             </p>
           </div>
           
