@@ -187,7 +187,7 @@ const About = () => {
               <div className="order-1 lg:order-2 text-center reveal-scale">
                 <div className="relative inline-block">
                   <img 
-                    src="/lovable-uploads/ce247bf5-483e-44c3-9e35-b7f84107589a.png" 
+                    src="/lovable-uploads/578dd957-97df-4d80-9e22-9c345ac8ed06.png" 
                     alt="Raben Moodley - Director Profile" 
                     className="w-96 h-96 rounded-full mx-auto shadow-premium object-cover hover-lift"
                   />
