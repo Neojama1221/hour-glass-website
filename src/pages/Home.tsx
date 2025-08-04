@@ -146,8 +146,8 @@ const Home = () => {
             </h1>
             <p className="text-xl md:text-3xl font-body mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
               Elite project planning consulting delivering uncompromising 
-              <span className="text-accent font-semibold"> clarity, integrity, precision, and prevention</span> 
-              to safeguard your most valuable assets.
+              <span className="text-accent font-semibold"> clarity, integrity, precision, and prevention</span>
+              {" "}to safeguard your most valuable assets.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button variant="accent" size="lg" className="text-xl px-12 py-4 hover-lift pulse-glow" onClick={() => navigate("/contact")}>
