@@ -36,11 +36,11 @@ const Header = () => {
           {/* Enhanced Logo */}
           <div className="flex-shrink-0">
             <NavLink to="/" className="flex items-center space-x-2 group">
-            <div className="w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="w-24 h-24 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/ae2ca714-51ca-4ad9-9545-9388b2a86f76.png" 
                   alt="Hour-Glass Logo" 
-                  className="h-14 w-14 object-contain drop-shadow-lg"
+                  className="h-20 w-20 object-contain drop-shadow-lg"
                 />
               </div>
               <span className={`text-2xl font-heading font-bold transition-colors duration-300 ${
