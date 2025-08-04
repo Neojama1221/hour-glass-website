@@ -36,11 +36,11 @@ const Header = () => {
           {/* Enhanced Logo */}
           <div className="flex-shrink-0">
             <NavLink to="/" className="flex items-center space-x-2 group">
-            <div className="w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/ae2ca714-51ca-4ad9-9545-9388b2a86f76.png" 
                   alt="Hour-Glass Logo" 
-                  className="h-12 w-12 object-contain drop-shadow-lg"
+                  className="h-14 w-14 object-contain drop-shadow-lg"
                 />
               </div>
               <span className={`text-2xl font-heading font-bold transition-colors duration-300 ${
@@ -58,6 +58,7 @@ const Header = () => {
                 <NavLink
                   key={item.name}
                   to={item.href}
+                  onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                     `relative font-body font-medium transition-all duration-300 px-3 py-2 rounded-lg group ${
                       isActive
@@ -108,7 +109,10 @@ const Header = () => {
                         : "text-foreground hover:text-accent hover:bg-accent/5"
                     }`
                   }
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {item.name}
                 </NavLink>

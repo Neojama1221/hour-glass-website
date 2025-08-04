@@ -72,7 +72,7 @@ const Home = () => {
 
   const projectPhases = [
     { name: "Project Initiation", description: "Strategic visioning and scope crystallization", icon: "🎯" },
-    { name: "Planning & Design", description: "Architectural blueprints and resource orchestration", icon: "📋" },
+    { name: "Planning & Design", description: "Detailed planning and resource orchestration", icon: "📋" },
     { name: "Execution", description: "Masterful implementation with real-time optimization", icon: "⚡" },
     { name: "Monitoring", description: "Intelligent tracking with predictive adjustments", icon: "📊" },
     { name: "Project Closeout", description: "Successful delivery and knowledge preservation", icon: "🏆" },
@@ -218,7 +218,7 @@ const Home = () => {
           <div className="text-center mb-20 reveal-up">
             <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-8">
               Our Core 
-              <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Values</span>
+              <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"> Values</span>
             </h2>
             <p className="text-xl font-body text-foreground max-w-3xl mx-auto">
               Four foundational principles that define our excellence and drive every engagement
@@ -256,7 +256,7 @@ const Home = () => {
           <div className="text-center mb-20 reveal-up">
             <h2 className="text-5xl md:text-6xl font-heading font-bold text-white mb-8">
               Complete Project 
-              <span className="text-accent">Solutions</span>
+              <span className="text-accent"> Solutions</span>
             </h2>
             <p className="text-xl font-body text-white/90 max-w-4xl mx-auto">
               Our proven approach covers every phase of your project with expert precision
@@ -307,7 +307,7 @@ const Home = () => {
           <div className="reveal-scale">
             <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8">
               Ready to Achieve 
-              <span className="text-accent">Project Mastery</span>?
+              <span className="text-accent"> Project Mastery</span>?
             </h2>
             <p className="text-2xl font-body mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
               Partner with Hour-Glass to transform your project vision into extraordinary reality. 

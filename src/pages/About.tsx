@@ -249,7 +249,7 @@ const About = () => {
           <div className="reveal-scale">
             <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8">
               Experience the Hour-Glass 
-              <span className="text-accent">Difference</span>
+              <span className="text-accent"> Difference</span>
             </h2>
             <p className="text-2xl font-body mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
               Partner with proven expertise and visionary leadership to ensure your next project 
