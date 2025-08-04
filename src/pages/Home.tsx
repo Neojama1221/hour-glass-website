@@ -155,7 +155,7 @@ const Home = () => {
                 Partner With Excellence
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
-              <Button variant="outline" size="lg" className="text-xl px-12 py-4 border-2 border-white/30 text-white hover:bg-white/10 backdrop-glass">
+              <Button variant="outline" size="lg" className="text-xl px-12 py-4 border-2 border-white/30 text-white hover:bg-white/10 backdrop-glass" onClick={() => navigate("/contact")}>
                 Discover Our Vision
               </Button>
             </div>
@@ -313,7 +313,7 @@ const Home = () => {
               Partner with Hour-Glass to transform your project vision into extraordinary reality. 
               Protect your time, cost, and reputation through our proven excellence.
             </p>
-            <Button variant="accent" size="lg" className="text-2xl px-16 py-6 hover-lift pulse-glow">
+            <Button variant="accent" size="lg" className="text-2xl px-16 py-6 hover-lift pulse-glow" onClick={() => navigate("/contact")}>
               <Sparkles className="mr-4 h-8 w-8" />
               Begin Your Journey
               <ArrowRight className="ml-4 h-8 w-8" />
