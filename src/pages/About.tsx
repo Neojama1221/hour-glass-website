@@ -91,7 +91,7 @@ const About = () => {
               Our <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Philosophy</span>
             </h2>
             <div className="bg-gradient-card rounded-3xl p-12 shadow-premium border-gradient hover-lift">
-              <p className="text-2xl font-body text-foreground leading-relaxed mb-8">
+              <p className="text-2xl font-body text-accent leading-relaxed mb-8">
                 At Hour-Glass, we believe that exceptional project planning is the <span className="text-accent font-semibold">cornerstone of business transformation</span>. 
                 Our philosophy centers on four fundamental principles that guide every engagement: delivering absolute 
                 clarity in communication and objectives, maintaining unwavering integrity in all our dealings, 
@@ -99,10 +99,10 @@ const About = () => {
                 strategies to mitigate risks before they impact your business.
               </p>
               
-              <p className="text-xl font-body text-muted-foreground leading-relaxed">
+              <p className="text-xl font-body text-accent leading-relaxed">
                 We understand that your reputation, time, and resources are invaluable. That's why we approach 
                 every project with the meticulous care and strategic thinking that complex, high-value projects demand. 
-                <span className="text-primary font-semibold"> Excellence isn't just our standard—it's our promise.</span>
+                <span className="text-accent font-semibold"> Excellence isn't just our standard—it's our promise.</span>
               </p>
             </div>
           </div>
