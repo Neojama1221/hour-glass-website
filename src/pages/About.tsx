@@ -120,7 +120,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1 reveal-up">
                 <div className="bg-white/10 backdrop-glass rounded-3xl p-10 shadow-premium">
-                  <h3 className="text-4xl font-heading font-bold text-white mb-6">
+                  <h3 className="text-4xl font-heading font-bold text-accent mb-6">
                     Raben Moodley
                   </h3>
                   <div className="text-lg font-semibold text-accent mb-6">
@@ -132,8 +132,8 @@ const About = () => {
                   </p>
                   
                   <div className="mb-8">
-                    <h4 className="text-2xl font-heading font-bold text-white mb-6">Key Experience & Achievements:</h4>
-                    <div className="space-y-6 text-white/90">
+                    <h4 className="text-2xl font-heading font-bold text-accent mb-6">Key Experience & Achievements:</h4>
+                    <div className="space-y-6 text-accent">
                       <div>
                         <h5 className="font-semibold text-accent mb-3">Forensic Delay Analysis & Claims:</h5>
                         <p className="text-sm leading-relaxed">Investigated project delays, prepared expert reports for claims and legal proceedings, and applied advanced delay analysis methodologies for complex disputes.</p>
@@ -168,8 +168,8 @@ const About = () => {
                           <cred.icon className="h-4 w-4 text-accent" />
                         </div>
                         <div>
-                          <p className="font-heading font-semibold text-white text-sm">{cred.title}</p>
-                          <p className="text-xs text-white/70">{cred.desc}</p>
+                          <p className="font-heading font-semibold text-accent text-sm">{cred.title}</p>
+                          <p className="text-xs text-accent">{cred.desc}</p>
                         </div>
                       </div>
                     ))}
@@ -177,7 +177,7 @@ const About = () => {
 
                   <div className="mt-8 p-6 bg-accent/10 rounded-2xl border border-accent/20">
                     <h5 className="font-semibold text-accent mb-2">Sector Experience:</h5>
-                    <p className="text-white/90 font-body text-sm">
+                    <p className="text-accent font-body text-sm">
                       Mining | Oil & Gas | Construction | Infrastructure | Power Generation
                     </p>
                   </div>
