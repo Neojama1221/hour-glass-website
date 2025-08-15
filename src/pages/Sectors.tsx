@@ -164,7 +164,7 @@ const Sectors = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6 shadow-card">
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
@@ -199,22 +199,6 @@ const Sectors = () => {
               </CardContent>
             </Card>
 
-            <Card className="p-6 shadow-card">
-              <CardContent className="p-0">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <TrendingUp className="h-6 w-6 text-accent" />
-                </div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3">
-                  Infrastructure Development
-                </h3>
-                <p className="font-body text-muted-foreground mb-3">
-                  R320M highway extension project enhancing regional connectivity.
-                </p>
-                <div className="text-sm font-body text-accent font-semibold">
-                  Completed 2022
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
