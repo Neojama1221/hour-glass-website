@@ -6,10 +6,7 @@ import {
   Building, 
   Zap, 
   TrendingUp,
-  ArrowRight,
-  DollarSign,
-  Users,
-  Award
+  ArrowRight
 } from "lucide-react";
 
 const Sectors = () => {
@@ -86,24 +83,6 @@ const Sectors = () => {
     }
   ];
 
-  const portfolioStats = [
-    {
-      icon: DollarSign,
-      title: "R50M - R1B+",
-      description: "Project Value Range"
-    },
-    {
-      icon: Users,
-      title: "500+",
-      description: "Team Members Managed"
-    },
-    {
-      icon: Award,
-      title: "98%",
-      description: "Success Rate"
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -129,30 +108,6 @@ const Sectors = () => {
           </p>
         </div>
       </section>
-
-      {/* Portfolio Stats */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {portfolioStats.map((stat, index) => (
-              <Card key={index} className="text-center p-6 shadow-card">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold text-primary mb-2">
-                    {stat.title}
-                  </h3>
-                  <p className="font-body text-muted-foreground">
-                    {stat.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Sectors Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
