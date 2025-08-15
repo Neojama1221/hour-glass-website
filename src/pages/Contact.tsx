@@ -44,8 +44,8 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Mon - Fri: 8:00 - 17:00"],
-      description: "Emergency support available 24/7",
+      details: ["Mon - Fri: 09:00 - 15:00"],
+      description: "Professional service during business hours",
       gradient: "from-amber-500 to-orange-400",
     }
   ];
@@ -295,26 +295,6 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Premium Emergency Contact */}
-              <Card className="mt-8 shadow-premium bg-gradient-to-br from-accent/10 to-primary/5 border-2 border-accent/30 hover-lift reveal-scale">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Star className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-bold text-primary mb-3 text-xl">
-                    Priority Project Support
-                  </h3>
-                  <p className="font-body text-muted-foreground mb-4">
-                    For urgent project matters requiring immediate attention:
-                  </p>
-                  <p className="font-heading font-bold text-accent text-2xl mb-2">
-                    +27 (0) 81 591 6549
-                  </p>
-                  <p className="font-body text-xs text-muted-foreground">
-                    Available 24/7 for critical project issues
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
