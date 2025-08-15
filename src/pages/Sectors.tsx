@@ -54,20 +54,6 @@ const Sectors = () => {
       ]
     },
     {
-      icon: Building,
-      title: "Infrastructure",
-      description: "Critical infrastructure projects that support economic development",
-      projects: "25+ Projects",
-      value: "R920M+",
-      expertise: [
-        "Transportation networks",
-        "Utility infrastructure",
-        "Public facilities development",
-        "Urban planning integration",
-        "Community impact management"
-      ]
-    },
-    {
       icon: Zap,
       title: "Power Generation",
       description: "Energy sector projects ensuring reliable power supply and sustainability",
