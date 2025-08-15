@@ -43,7 +43,9 @@ const Header = () => {
                   className="h-20 w-20 object-contain drop-shadow-lg"
                 />
               </div>
-              <span className="text-2xl font-heading font-bold transition-colors duration-300 text-orange-500 group-hover:text-orange-400">
+              <span className={`text-2xl font-heading font-bold transition-colors duration-300 ${
+                isScrolled ? 'text-white' : 'text-white'
+              } group-hover:text-accent`}>
                 Hour-Glass
               </span>
             </NavLink>
