@@ -171,8 +171,9 @@ const Home = () => {
               <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"> Delivers</span>
             </h2>
             <p className="text-2xl font-body text-foreground max-w-6xl mx-auto leading-relaxed mb-16">
-              We orchestrate comprehensive project planning symphonies, specializing in complex, 
-              high-stakes projects across mining, oil & gas, construction, infrastructure, and power generation. 
+              We orchestrate comprehensive project planning symphonies, ranging from complex, 
+              high-stakes projects across mining, oil & gas, construction, infrastructure, and power generation 
+              to simple "in and out" installations that still have to meet contractual planning compliance. 
               Our mastery ensures your projects transcend expectations in 
               <span className="text-accent font-semibold"> time, budget, and quality</span>.
             </p>
