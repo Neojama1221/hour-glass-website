@@ -93,11 +93,29 @@ const About = () => {
             <div className="bg-gradient-card rounded-3xl p-12 shadow-premium border-gradient hover-lift">
               <p className="text-2xl font-body text-foreground leading-relaxed mb-8">
                 At Hour-Glass, we believe that exceptional project planning is the <span className="text-accent font-semibold">cornerstone of business transformation</span>. 
-                Our philosophy centers on four fundamental principles that guide every engagement: delivering absolute 
-                clarity in communication and objectives, maintaining unwavering integrity in all our dealings, 
-                applying surgical precision in every aspect of project execution, and implementing robust prevention 
-                strategies to mitigate risks before they impact your business.
+                Our philosophy centers on four fundamental principles that guide every engagement:
               </p>
+              
+              <div className="text-left max-w-4xl mx-auto mb-8">
+                <ul className="space-y-4 text-xl font-body text-foreground">
+                  <li className="flex items-start">
+                    <span className="text-accent font-semibold mr-3">•</span>
+                    <span>delivering absolute clarity in communication and objectives</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent font-semibold mr-3">•</span>
+                    <span>maintaining unwavering integrity in all our dealings</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent font-semibold mr-3">•</span>
+                    <span>applying surgical precision in every aspect of project execution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent font-semibold mr-3">•</span>
+                    <span>implementing robust prevention strategies to mitigate risks before they impact your business</span>
+                  </li>
+                </ul>
+              </div>
               
               <p className="text-xl font-body text-muted-foreground leading-relaxed">
                 We understand that your reputation, time, and resources are invaluable. That's why we approach 
