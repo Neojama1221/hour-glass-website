@@ -16,17 +16,50 @@ import {
 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useAdvancedEffects";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 const Contact = () => {
   useScrollReveal();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Form Submitted Successfully!",
-      description: "Thank you for your interest. We'll respond within 24 hours to begin your project transformation.",
-    });
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.target as HTMLFormElement);
+      const data = {
+        name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string || 'Not provided',
+        subject: formData.get('service') as string,
+        message: `Company: ${formData.get('company') || 'Not provided'}\nProject Value: ${formData.get('projectValue') || 'Not specified'}\n\nMessage:\n${formData.get('message')}`
+      };
+
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: data
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Form Submitted Successfully!",
+        description: "Thank you for your interest. We'll respond within 24 hours to begin your project transformation.",
+      });
+
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error submitting form",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -150,6 +183,7 @@ const Contact = () => {
                         </Label>
                         <Input 
                           id="firstName" 
+                          name="firstName"
                           type="text" 
                           className="mt-3 h-12 border-2 border-border focus:border-accent transition-colors duration-300" 
                           required 
@@ -161,6 +195,7 @@ const Contact = () => {
                         </Label>
                         <Input 
                           id="lastName" 
+                          name="lastName"
                           type="text" 
                           className="mt-3 h-12 border-2 border-border focus:border-accent transition-colors duration-300" 
                           required 
@@ -175,6 +210,7 @@ const Contact = () => {
                         </Label>
                         <Input 
                           id="email" 
+                          name="email"
                           type="email" 
                           className="mt-3 h-12 border-2 border-border focus:border-accent transition-colors duration-300" 
                           required 
@@ -186,6 +222,7 @@ const Contact = () => {
                         </Label>
                         <Input 
                           id="phone" 
+                          name="phone"
                           type="tel" 
                           className="mt-3 h-12 border-2 border-border focus:border-accent transition-colors duration-300" 
                         />
@@ -199,6 +236,7 @@ const Contact = () => {
                         </Label>
                         <Input 
                           id="company" 
+                          name="company"
                           type="text" 
                           className="mt-3 h-12 border-2 border-border focus:border-accent transition-colors duration-300" 
                         />
@@ -209,6 +247,7 @@ const Contact = () => {
                         </Label>
                         <select 
                           id="projectValue" 
+                          name="projectValue"
                           className="mt-3 w-full h-12 px-4 py-2 border-2 border-border bg-background rounded-lg focus:outline-none focus:border-accent transition-colors duration-300"
                         >
                           <option value="">Select range</option>
@@ -227,6 +266,7 @@ const Contact = () => {
                       </Label>
                       <select 
                         id="service" 
+                        name="service"
                         className="mt-3 w-full h-12 px-4 py-2 border-2 border-border bg-background rounded-lg focus:outline-none focus:border-accent transition-colors duration-300"
                         required
                       >
@@ -245,6 +285,7 @@ const Contact = () => {
                       </Label>
                       <Textarea 
                         id="message" 
+                        name="message"
                         rows={6} 
                         className="mt-3 border-2 border-border focus:border-accent transition-colors duration-300" 
                         placeholder="Share your project vision, timeline, key challenges, and how Hour-Glass can help transform your goals into reality..."
@@ -264,9 +305,15 @@ const Contact = () => {
                       </Label>
                     </div>
 
-                    <Button variant="accent" size="lg" className="w-full text-xl py-4 hover-lift pulse-glow reveal-up stagger-5">
+                    <Button 
+                      type="submit" 
+                      variant="accent" 
+                      size="lg" 
+                      className="w-full text-xl py-4 hover-lift pulse-glow reveal-up stagger-5"
+                      disabled={isSubmitting}
+                    >
                       <Sparkles className="mr-3 h-6 w-6" />
-                      Begin Your Transformation
+                      {isSubmitting ? 'Sending...' : 'Begin Your Transformation'}
                       <Send className="ml-3 h-6 w-6" />
                     </Button>
                   </form>
