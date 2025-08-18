@@ -233,10 +233,10 @@ const Services = () => {
             <Card className="p-6 shadow-card">
               <CardContent className="p-0">
                 <h3 className="text-xl font-heading font-semibold text-primary mb-3">
-                  Risk Assessment
+                  Schedule Risk Assessment
                 </h3>
                 <p className="font-body text-muted-foreground">
-                  Comprehensive risk analysis and mitigation strategy development
+                  Comprehensive schedule risk analysis and mitigation strategy development
                 </p>
               </CardContent>
             </Card>
@@ -244,10 +244,10 @@ const Services = () => {
             <Card className="p-6 shadow-card">
               <CardContent className="p-0">
                 <h3 className="text-xl font-heading font-semibold text-primary mb-3">
-                  Process Optimization
+                  Process Optimisation
                 </h3>
                 <p className="font-body text-muted-foreground">
-                  Streamlining workflows and improving operational efficiency
+                  Schedule and progress reporting optimisation to enhance project efficiency and resource utilisation
                 </p>
               </CardContent>
             </Card>
@@ -258,7 +258,7 @@ const Services = () => {
                   Training & Development
                 </h3>
                 <p className="font-body text-muted-foreground">
-                  Building internal project planning capabilities
+                  Building project planning capabilities for new or current planning resources
                 </p>
               </CardContent>
             </Card>
