@@ -252,10 +252,6 @@ const About = () => {
                     <cite className="text-accent font-semibold">- Rabendra Moodley</cite>
                   </blockquote>
                   
-                  <p className="text-lg font-body text-foreground">
-                    He also possesses a higher national diploma in mechanical engineering from the 
-                    Durban University of Technology.
-                  </p>
                 </div>
                 
                 <div className="order-1 lg:order-2 text-center">
