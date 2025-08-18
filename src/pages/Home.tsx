@@ -71,45 +71,88 @@ const Home = () => {
   const projectPhases = [
     { 
       name: "Initiation", 
-      description: "High-level conceptual schedule input and strategic alignment", 
+      description: "High-level conceptual schedule input and strategic project foundation", 
       icon: "🎯",
-      details: ["High-level conceptual schedule input", "Early risk and exposure review", "Strategic alignment of scope and schedule"]
+      details: [
+        "High-level conceptual schedule input",
+        "Early risk and exposure review", 
+        "Strategic alignment of scope and schedule",
+        "Contractual risk flagging for preliminary project structures",
+        "Securing feasibility project funding through the investment committee by demonstrating effective schedule governance"
+      ]
     },
     { 
       name: "Feasibility", 
-      description: "Development of Level 1-2 project schedules and time-risk scenario planning", 
+      description: "Development of Level 1-2 project schedules and strategic planning", 
       icon: "📋",
-      details: ["Development of Level 1-2 project schedules", "Time-risk scenario planning", "Tender timeline advisory"]
+      details: [
+        "Development of Level 1-2 project schedules",
+        "Time-risk scenario planning", 
+        "Tender timeline advisory",
+        "Support in drafting time-related terms in RFPs or procurement strategies"
+      ]
     },
     { 
       name: "Front-End Engineering Design (FEED)", 
-      description: "Level 3-4 schedule development and delay mitigation planning", 
+      description: "Level 3-4 schedule development and contract planning", 
       icon: "⚙️",
-      details: ["Level 3-4 schedule development", "BOQ & milestone alignment", "Delay mitigation planning"]
+      details: [
+        "Level 3-4 schedule development",
+        "BOQ & milestone alignment", 
+        "Delay mitigation planning",
+        "Drawing Approval Cycle based progress tracking system",
+        "Review of time and planning obligations in draft contracts (NEC, FIDIC, EPC)"
+      ]
     },
     { 
       name: "Procurement / Manufacturing", 
-      description: "Procurement schedule creation and vendor milestone tracking", 
+      description: "Procurement schedule creation and vendor coordination", 
       icon: "🏭",
-      details: ["Procurement schedule creation", "Vendor milestone tracking", "Long-lead equipment timing strategies"]
+      details: [
+        "Procurement schedule creation",
+        "Vendor milestone tracking", 
+        "Long-lead equipment timing strategies",
+        "QC Sign-off based progress tracking system",
+        "Schedule-related input to supplier contract clauses & delivery obligations"
+      ]
     },
     { 
       name: "Execution / Construction", 
-      description: "Level 4-5 schedule development and forensic delay analysis", 
+      description: "Level 4-5 schedule development and comprehensive project monitoring", 
       icon: "⚡",
-      details: ["Level 4-5 schedule development", "Forensic delay & impact analysis", "Physical Progress monitoring"]
+      details: [
+        "Level 4-5 schedule development",
+        "Forensic delay & impact analysis", 
+        "Physical Progress monitoring & S-curve reporting",
+        "Claims and EOT support",
+        "Contractual compliance monitoring & support with compensation events (NEC/FIDIC)",
+        "Professional schedule auditing and/or creation"
+      ]
     },
     { 
       name: "Commissioning", 
-      description: "Commissioning sequence scheduling and readiness tracking", 
+      description: "Commissioning sequence scheduling and handover preparation", 
       icon: "🔧",
-      details: ["Commissioning sequence scheduling", "QC Sign-off based progress tracking", "Late-system handover delay assessment"]
+      details: [
+        "Commissioning sequence scheduling",
+        "QC Sign-off based progress tracking system", 
+        "Late-system handover delay assessment",
+        "Readiness tracking",
+        "Support for schedule-related obligations in O&M handover clauses"
+      ]
     },
     { 
       name: "Closeout", 
-      description: "Forensic delay analysis and final project documentation", 
+      description: "Final forensic analysis and comprehensive project closure", 
       icon: "🏆",
-      details: ["Forensic delay method selection and analysis", "As-built schedule development", "Final report and project repository audit"]
+      details: [
+        "Forensic Delay method selection and analysis",
+        "As-built schedule development", 
+        "Lessons learned report",
+        "Final Report and project repository audit",
+        "Dispute resolution support",
+        "Contractual closure & reconciliation of time-related obligations and claims"
+      ]
     },
   ];
 
@@ -303,12 +346,22 @@ const Home = () => {
                     <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-accent/50 to-white/30 transform translate-x-10"></div>
                   )}
                 </div>
-                <h3 className="text-xl font-heading font-bold text-white mb-3">
+                <h3 className="text-lg font-heading font-bold text-white mb-3">
                   {phase.name}
                 </h3>
-                <p className="font-body text-sm text-white/80 leading-relaxed">
+                <p className="font-body text-xs text-white/80 leading-relaxed mb-4">
                   {phase.description}
                 </p>
+                <div className="text-left">
+                  <ul className="space-y-2 text-xs text-white/70">
+                    {phase.details.map((detail, detailIndex) => (
+                      <li key={detailIndex} className="flex items-start">
+                        <span className="text-accent mr-2 flex-shrink-0">•</span>
+                        <span className="leading-tight">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
