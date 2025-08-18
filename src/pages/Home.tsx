@@ -13,7 +13,6 @@ const Home = () => {
   
   const projectsCount = useCountUp(150, 3000);
   const valueCount = useCountUp(2.5, 3000);
-  const retentionCount = useCountUp(95, 3000);
 
   useScrollReveal();
   useParallax();
@@ -25,7 +24,6 @@ const Home = () => {
           if (entry.isIntersecting) {
             projectsCount.startAnimation();
             valueCount.startAnimation();
-            retentionCount.startAnimation();
           }
         });
       },
@@ -93,13 +91,6 @@ const Home = () => {
       prefix: "R",
       label: "Total Value Managed",
       description: "In project investments protected"
-    },
-    { 
-      icon: Users, 
-      value: retentionCount.count, 
-      suffix: "%", 
-      label: "Client Retention",
-      description: "Long-term partnerships built on excellence"
     },
   ];
 
