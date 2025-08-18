@@ -15,9 +15,19 @@ import {
   CheckCircle
 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useAdvancedEffects";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   useScrollReveal();
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Form Submitted Successfully!",
+      description: "Thank you for your interest. We'll respond within 24 hours to begin your project transformation.",
+    });
+  };
 
   const contactInfo = [
     {
@@ -132,7 +142,7 @@ const Contact = () => {
                     ))}
                   </div>
 
-                  <form className="space-y-8">
+                  <form className="space-y-8" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="reveal-up stagger-1">
                         <Label htmlFor="firstName" className="font-body font-semibold text-primary">
