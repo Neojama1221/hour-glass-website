@@ -179,7 +179,7 @@ const Home = () => {
           </div>
 
           {/* Stats section */}
-          <div ref={statsRef} className="grid grid-cols-1 md:grid-cols-3 gap-12 reveal-up">
+          <div ref={statsRef} className="grid grid-cols-1 md:grid-cols-2 gap-12 reveal-up max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center p-8 shadow-elevated hover-lift bg-gradient-card border-gradient">
                 <CardContent className="p-0">
