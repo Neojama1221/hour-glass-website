@@ -137,7 +137,7 @@ const About = () => {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1 reveal-up">
-                <div className="bg-white/10 backdrop-glass rounded-3xl p-10 shadow-premium">
+                <div className="bg-white rounded-3xl p-10 shadow-premium">
                   <h3 className="text-4xl font-heading font-bold text-accent mb-6">
                     Raben Moodley
                   </h3>
