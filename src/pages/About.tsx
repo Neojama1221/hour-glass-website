@@ -219,29 +219,54 @@ const About = () => {
         </div>
       </section>
 
-      {/* Enhanced Achievements */}
+      {/* Newsletter Section */}
       <section className="py-32 bg-gradient-subtle relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl md:text-6xl font-heading font-bold text-center text-primary mb-20 reveal-up">
-            Exceptional <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Achievements</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {achievements.map((achievement, index) => (
-              <Card key={index} className={`group relative overflow-hidden shadow-elevated hover-lift reveal-scale stagger-${index + 1} bg-gradient-card`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardContent className="p-8 text-center relative z-10">
-                  <div className="w-20 h-20 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <achievement.icon className="h-10 w-10 text-accent group-hover:text-primary transition-colors duration-300" />
-                  </div>
-                  <h3 className="text-3xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">
-                    {achievement.title}
-                  </h3>
-                  <p className="font-body text-muted-foreground leading-relaxed">
-                    {achievement.description}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-3xl p-12 shadow-premium reveal-up">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1">
+                  <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-8">
+                    Congratulations to 
+                    <span className="text-gradient bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"> Rabendra Moodley</span> on his academic achievement
+                  </h2>
+                  
+                  <p className="text-lg font-body text-foreground mb-6 leading-relaxed">
+                    Congratulations to Rabendra Moodley, SIB capital planner at Anglo American Platinum, 
+                    for obtaining a postgraduate-level professional diploma in forensic schedule analysis, 
+                    with a distinction pass, from the College of Contract Management in the UK. The course 
+                    focuses on the techniques needed to predict and analyse, as effectively as possible, 
+                    delays on construction projects; skills which are crucial for his current role.
                   </p>
-                </CardContent>
-              </Card>
-            ))}
+                  
+                  <blockquote className="border-l-4 border-accent pl-6 mb-6">
+                    <p className="text-lg font-body text-muted-foreground italic leading-relaxed mb-4">
+                      "The College of Contract Management's course in forensic schedule analysis taught me 
+                      the best methods needed in order to quantify delay, determine causation, assess 
+                      responsibility and financial consequences of delays. It also taught me to explore 
+                      as-planned versus as-built analysis; time impact versus impacted-as-planned analysis; 
+                      and how to look at delay analysis report formats. These knowledge areas are crucial 
+                      when setting up programmes in order to implement and assess claims more efficiently 
+                      and accurately."
+                    </p>
+                    <cite className="text-accent font-semibold">- Rabendra Moodley</cite>
+                  </blockquote>
+                  
+                  <p className="text-lg font-body text-foreground">
+                    He also possesses a higher national diploma in mechanical engineering from the 
+                    Durban University of Technology.
+                  </p>
+                </div>
+                
+                <div className="order-1 lg:order-2 text-center">
+                  <img 
+                    src="/lovable-uploads/94ef176a-f76f-426b-bf3f-e56b1e07d813.png" 
+                    alt="Rabendra Moodley - Academic Achievement" 
+                    className="w-full max-w-md mx-auto rounded-2xl shadow-premium hover-lift"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
