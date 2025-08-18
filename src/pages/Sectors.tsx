@@ -87,7 +87,7 @@ const Sectors = () => {
       <section className="py-16 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Trusted in projects worth R50M – R1B+
+            Trusted in projects worth R5M – R1B+
           </h2>
           <p className="text-lg font-body opacity-90">
             Delivering excellence across Africa's most challenging industrial environments
