@@ -69,48 +69,11 @@ const Home = () => {
   ];
 
   const projectPhases = [
-    { 
-      name: "Initiation", 
-      description: "High-level conceptual schedule input and strategic alignment", 
-      icon: "🎯",
-      details: ["High-level conceptual schedule input", "Early risk and exposure review", "Strategic alignment of scope and schedule"]
-    },
-    { 
-      name: "Feasibility", 
-      description: "Development of Level 1-2 project schedules and time-risk scenario planning", 
-      icon: "📋",
-      details: ["Development of Level 1-2 project schedules", "Time-risk scenario planning", "Tender timeline advisory"]
-    },
-    { 
-      name: "Front-End Engineering Design (FEED)", 
-      description: "Level 3-4 schedule development and delay mitigation planning", 
-      icon: "⚙️",
-      details: ["Level 3-4 schedule development", "BOQ & milestone alignment", "Delay mitigation planning"]
-    },
-    { 
-      name: "Procurement / Manufacturing", 
-      description: "Procurement schedule creation and vendor milestone tracking", 
-      icon: "🏭",
-      details: ["Procurement schedule creation", "Vendor milestone tracking", "Long-lead equipment timing strategies"]
-    },
-    { 
-      name: "Execution / Construction", 
-      description: "Level 4-5 schedule development and forensic delay analysis", 
-      icon: "⚡",
-      details: ["Level 4-5 schedule development", "Forensic delay & impact analysis", "Physical Progress monitoring"]
-    },
-    { 
-      name: "Commissioning", 
-      description: "Commissioning sequence scheduling and readiness tracking", 
-      icon: "🔧",
-      details: ["Commissioning sequence scheduling", "QC Sign-off based progress tracking", "Late-system handover delay assessment"]
-    },
-    { 
-      name: "Closeout", 
-      description: "Forensic delay analysis and final project documentation", 
-      icon: "🏆",
-      details: ["Forensic delay method selection and analysis", "As-built schedule development", "Final report and project repository audit"]
-    },
+    { name: "Project Initiation", description: "Strategic visioning and scope crystallization", icon: "🎯" },
+    { name: "Planning & Design", description: "Detailed planning and resource orchestration", icon: "📋" },
+    { name: "Execution", description: "Masterful implementation with real-time optimization", icon: "⚡" },
+    { name: "Monitoring", description: "Intelligent tracking with predictive adjustments", icon: "📊" },
+    { name: "Project Closeout", description: "Successful delivery and knowledge preservation", icon: "🏆" },
   ];
 
   const stats = [
@@ -292,7 +255,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-7 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {projectPhases.map((phase, index) => (
               <div key={index} className="text-center reveal-up" style={{ animationDelay: `${index * 200}ms` }}>
                 <div className="relative mb-8">
