@@ -260,7 +260,7 @@ const About = () => {
                 
                 <div className="order-1 lg:order-2 text-center">
                   <img 
-                    src="/lovable-uploads/94ef176a-f76f-426b-bf3f-e56b1e07d813.png" 
+                    src="/lovable-uploads/c18f5742-c0ef-4dfb-9434-e5a31ac45106.png" 
                     alt="Rabendra Moodley - Academic Achievement" 
                     className="w-full max-w-md mx-auto rounded-2xl shadow-premium hover-lift"
                   />
