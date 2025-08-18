@@ -16,62 +16,87 @@ const Services = () => {
   const projectPhases = [
     {
       icon: Rocket,
-      phase: "Project Initiation",
-      description: "Strategic foundation setting",
+      phase: "Initiation",
+      description: "High-level conceptual schedule input",
       details: [
-        "Business case development",
-        "Stakeholder identification and engagement",
-        "Project charter creation",
-        "Initial risk assessment",
-        "Success criteria definition"
+        "High level conceptual schedule input",
+        "Early risk and exposure review",
+        "Strategic alignment of scope and schedule",
+        "Contract risk flagging for preliminary project structures",
+        "Securing feasibility project funding through the investment committee by demonstrating effective schedule governance"
       ]
     },
     {
-      icon: PlaneTakeoff,
-      phase: "Planning & Design", 
-      description: "Comprehensive project roadmap",
+      icon: Target,
+      phase: "Feasibility",
+      description: "Development of Level 1-2 project schedules",
       details: [
-        "Work breakdown structure",
-        "Resource allocation and scheduling",
-        "Risk management planning",
-        "Quality assurance framework",
-        "Communication protocols"
+        "Development of Level 1-2 project schedules",
+        "Time-risk scenario planning",
+        "Tender timeline advisory",
+        "Support in drafting time related terms in RFPs or procurement strategies"
       ]
     },
     {
       icon: Settings,
-      phase: "Execution",
-      description: "Active project implementation",
+      phase: "Front-End Engineering Design (FEED)",
+      description: "Level 3-4 schedule development",
       details: [
-        "Team coordination and leadership",
-        "Quality control and assurance",
-        "Vendor and contractor management",
-        "Issue resolution and escalation",
-        "Change management processes"
+        "Level 3-4 schedule development",
+        "BOQ & milestone alignment",
+        "Delay mitigation planning",
+        "Drawing Approval Cycle based progress tracking system",
+        "Review of time and planning obligations in draft contracts (NEC, FIDIC, EPC)"
+      ]
+    },
+    {
+      icon: PlaneTakeoff,
+      phase: "Procurement/Manufacturing",
+      description: "Procurement schedule creation",
+      details: [
+        "Procurement schedule creation",
+        "Vendor milestone tracking",
+        "Long-lead procurement timing strategies",
+        "QC Sign-off based progress tracking system",
+        "Schedule-related input to supplier contract clauses & delivery obligations"
       ]
     },
     {
       icon: BarChart3,
-      phase: "Monitoring & Control",
-      description: "Performance tracking and optimization",
+      phase: "Execution/Construction",
+      description: "Level 4-5 schedule development",
       details: [
-        "Progress monitoring and reporting",
-        "Budget and schedule control",
-        "Risk mitigation implementation",
-        "Performance analysis",
-        "Corrective action planning"
+        "Level 4-5 schedule development",
+        "Forensic delay & impact analysis",
+        "Physical Progress monitoring & S-curve reporting",
+        "Claims and EOT support",
+        "Contractual compliance monitoring & support with compensation events (NEC/FIDIC)",
+        "Professional schedule auditing and/or creation"
+      ]
+    },
+    {
+      icon: Shield,
+      phase: "Commissioning",
+      description: "Commissioning sequence scheduling",
+      details: [
+        "Commissioning sequence scheduling",
+        "QC Sign-off based progress tracking system",
+        "Late system handover delay assessment",
+        "Readiness tracking",
+        "Support for schedule-related obligations in O&M handover clauses"
       ]
     },
     {
       icon: CheckCircle,
-      phase: "Project Closeout",
-      description: "Successful project completion",
+      phase: "Closeout",
+      description: "Forensic Delay method selection and analysis",
       details: [
-        "Final deliverable verification",
-        "Stakeholder acceptance",
-        "Documentation and handover",
-        "Lessons learned capture",
-        "Post-project evaluation"
+        "Forensic Delay method selection and analysis",
+        "As-built schedule development",
+        "Lessons learned report",
+        "Final Report and project repository audit",
+        "Dispute resolution support",
+        "Contractual closure & reconciliation of time-related obligations and claims"
       ]
     }
   ];
