@@ -202,12 +202,9 @@ const Services = () => {
                       
                       {/* Phase Details */}
                       <div className="md:col-span-3">
-                        <h3 className="text-2xl font-heading font-bold text-primary mb-2">
+                        <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                           {phase.phase}
                         </h3>
-                        <p className="text-lg font-body text-secondary mb-4">
-                          {phase.description}
-                        </p>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 font-body text-foreground">
                           {phase.details.map((detail, detailIndex) => (
                             <li key={detailIndex} className="flex items-start space-x-2">
