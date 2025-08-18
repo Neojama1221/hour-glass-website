@@ -85,7 +85,7 @@ const Services = () => {
     {
       icon: Target,
       title: "Cost Control",
-      description: "Comprehensive budget management and cost optimization strategies"
+      description: "Integrated cost planning, estimation, and control using project scheduling tools and techniques"
     },
     {
       icon: Shield,
