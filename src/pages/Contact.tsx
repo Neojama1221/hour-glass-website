@@ -38,11 +38,18 @@ const Contact = () => {
         message: `Company: ${formData.get('company') || 'Not provided'}\nProject Value: ${formData.get('projectValue') || 'Not specified'}\n\nMessage:\n${formData.get('message')}`
       };
 
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+      console.log('Submitting contact form with data:', data);
+
+      const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
         body: data
       });
 
-      if (error) throw error;
+      console.log('Function response:', { result, error });
+
+      if (error) {
+        console.error('Function error:', error);
+        throw error;
+      }
 
       toast({
         title: "Form Submitted Successfully!",
